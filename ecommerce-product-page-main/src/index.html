@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="flex items-center justify-between mx-48 py-8 pb-8 border-b-2">
+      <ul class="flex gap-8 text-lg">
+        <img src="../images/logo.svg" alt="Sneakers Website Logo" />
+        <li>
+          <a
+            href="#"
+            class="transition-all duration-300 ease-in-out text-stone-400 hover:text-stone-500"
+            >Collections</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="transition-all duration-300 ease-in-out text-stone-400 hover:text-stone-500"
+            >Men</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="transition-all duration-300 ease-in-out text-stone-400 hover:text-stone-500"
+            >Women</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="transition-all duration-300 ease-in-out text-stone-400 hover:text-stone-500"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="transition-all duration-300 ease-in-out text-stone-400 hover:text-stone-500"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="flex gap-8 items-center">
+        <button>
+          <img src="../images/icon-cart.svg" alt="Cart Icon" />
+        </button>
+        <img
+          src="../images/image-avatar.png"
+          alt="Profile photo of user"
+          class="w-12 h-12"
+        />
+      </div>
+    </nav>
+
+    <figure class="flex gap-32 py-24 max-w-5xl mx-auto">
+      <div>
+        <button>
+          <img
+            src="../images/image-product-1.jpg"
+            alt="Main photo of product"
+            class="w-96 h-96 rounded-2xl mb-8"
+          />
+        </button>
+        <div class="flex w-96 justify-between">
+          <div class="relative">
+            <img
+              class="w-20 h-20 rounded-lg border-2 border-orange-600"
+              src="../images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 left-0 right-0 bottom-0 bg-stone-100 bg-opacity-50"
+            ></div>
+          </div>
+
+          <img
+            class="w-20 h-20 rounded-lg"
+            src="../images/image-product-2-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="w-20 h-20 rounded-lg"
+            src="../images/image-product-3-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="w-20 h-20 rounded-lg"
+            src="../images/image-product-4-thumbnail.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <span class="text-amber-500 font-bold mb-4">SNEAKER COMPANY</span>
+        <h3 class="text-5xl font-bold mb-8">Fall Limited Edition Sneakers</h3>
+        <p class="text-lg text-stone-400 mb-6">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="flex gap-4 items-center mb-2">
+          <p class="text-3xl font-bold">$125.00</p>
+          <p class="text-orange-500 bg-orange-100 px-1 py-0.5 rounded-md">
+            50%
+          </p>
+        </div>
+        <p class="text-lg text-stone-400 font-semibold">$250.00</p>
+        <div class="flex gap-4 mt-8">
+          <div
+            class="flex items-center justify-between shadow-sm px-4 py-2 rounded-lg bg-stone-100 w-40"
+          >
+            <button class="text-3xl text-orange-500">-</button>
+            <span class="text-xl font-bold">0</span>
+            <button class="text-3xl text-orange-500">+</button>
+          </div>
+
+          <button
+            class="flex items-center shadow-sm gap-4 bg-orange-500 transition duration-200 hover:bg-orange-400 px-16 py-4 rounded-lg"
+          >
+            <i
+              ><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#fff"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </i>
+            <p class="text-lg text-white font-sem">Add to cart</p>
+          </button>
+        </div>
+      </div>
+    </figure>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
