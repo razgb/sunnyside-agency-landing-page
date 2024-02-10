@@ -1,0 +1,23 @@
+# Build output
+/*.o
+/*.exe
+/build
+
+# Dependencies
+/node_modules
+/vendor
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs, temp files
+*.log
+*.tmp
+
+# Sensitive data
+config.json 
