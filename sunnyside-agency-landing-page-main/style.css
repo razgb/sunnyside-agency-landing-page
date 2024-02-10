@@ -1,0 +1,156 @@
+:root {
+  --fs-s: 1.6rem;
+  --fs-md: 1.8rem;
+  --fs-lg: 2.2rem;
+  --fs-xl: 4.8rem;
+  --fs-2xl: 6.4rem;
+
+  --color-text__lightgray: hsl(210, 4%, 67%);
+  --color-text__darkgray: hsl(232, 10%, 55%);
+  --color-text__base: hsl(213, 9%, 39%);
+  --color-text__deep: hsl(212, 27%, 19%);
+  --color-text__midnight: hsl(212, 27%, 19%);
+
+  --ff-normal: "Barlow", sans-serif;
+  --ff-headings: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-normal);
+}
+section {
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+p {
+  line-height: 1.5;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+}
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+.app-container {
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.8rem;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav a:link,
+.nav a:visited {
+  font-size: var(--fs-md);
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .nav-cta:link,
+.nav .nav-cta:visited {
+  font-family: var(--ff-headings);
+  background-color: white;
+  color: var(--color-text__midnight);
+  border-radius: 3.6rem;
+  padding: 1.8rem 3.6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: all ease-in 0.15s;
+}
+.nav .nav-cta:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+/* Hero section */
+.hero {
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--ff-headings);
+  font-size: var(--fs-2xl);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+
+.hero .arrow {
+  position: absolute;
+  font-size: var(--fs-2xl);
+  color: white;
+  top: 45vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* zig zag section */
+.zig-zag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.zig-zag .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  width: 75%;
+}
+
+.zig-zag img {
+  width: 100%;
+  background-size: cover;
+}
+
+.zig-zag h2 {
+  font-size: var(--fs-xl);
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  color: var(--color-text__midnight);
+}
+
+.zig-zag p {
+  font-size: var(--fs-lg);
+  color: var(--color-text__darkgray);
+}
+
+.zig-zag a:link,
+.zig-zag a:visited {
+  font-size: var(--fs-lg);
+  color: var(--color-text__midnight);
+  text-transform: uppercase;
+  font-family: var(--ff-headings);
+  font-weight: 700;
+  text-decoration: none;
+}

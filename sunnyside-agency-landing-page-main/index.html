@@ -1,37 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <title>Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <nav class="nav">
+          <img src="./images/logo.svg" alt="Company Logo" />
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a class="nav-cta" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  We are creatives
+      <main>
+        <section class="hero">
+          <div>
+            <h1>We are creatives</h1>
+            <!-- <p class="arrow">&darr;</p> -->
+            <svg
+              class="arrow"
+              width="36"
+              height="114"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                stroke="#FFF"
+                stroke-width="6"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 3v100M3 95.484l15 15 15-15" />
+              </g>
+            </svg>
+          </div>
+          <img
+            src="./images/desktop/image-header.jpg"
+            alt="Landing page welcome image"
+          />
+        </section>
+        <section class="zig-zag">
+          <div class="text-box">
+            <h2>Transform your brand</h2>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
 
-  Transform your brand
+          <div>
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt="Image of an egg adjacent to transform heading."
+            />
+          </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+          <div>
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt="Image of pink cup adjacent to Stand out heading"
+            />
+          </div>
 
-  Learn more
+          <div class="text-box">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we'll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <img
+              src="./images/desktop/image-graphic-design.jpg"
+              alt="Image of cherries adjacent to graphic design section."
+            />
+          </div>
+          <div>
+            <img
+              src="./images/desktop/image-photography.jpg"
+              alt="Image of an orange adjacent to photography section."
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
 
-  Stand out to the right audience
+<!-- 
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
 
   Learn more
 
@@ -58,11 +143,4 @@
   About
   Services
   Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  Contact -->
