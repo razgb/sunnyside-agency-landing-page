@@ -1,9 +1,9 @@
 :root {
-  --fs-s: 1.6rem;
-  --fs-md: 1.8rem;
+  --fs-md: 2rem;
   --fs-lg: 2.2rem;
-  --fs-xl: 4.8rem;
-  --fs-2xl: 6.4rem;
+  --fs-xl: 3.2rem;
+  --fs-2xl: 4.8rem;
+  --fs-3xl: 6.4rem;
 
   --color-text__lightgray: hsl(210, 4%, 67%);
   --color-text__darkgray: hsl(232, 10%, 55%);
@@ -21,12 +21,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0px;
   font-family: var(--ff-normal);
+  font-size: 0;
 }
 section {
   border: none;
 }
-
 html {
   font-size: 62.5%;
 }
@@ -67,6 +68,8 @@ img {
   font-size: var(--fs-md);
   text-decoration: none;
   color: white;
+
+  transition: all ease-in 0.15s;
 }
 .nav a:hover {
   text-decoration: underline;
@@ -81,7 +84,6 @@ img {
   padding: 1.8rem 3.6rem;
   text-transform: uppercase;
   font-weight: 900;
-  transition: all ease-in 0.15s;
 }
 .nav .nav-cta:hover {
   text-decoration: none;
@@ -89,16 +91,15 @@ img {
 }
 
 /* Hero section */
-.hero {
-}
-
 .hero h1 {
   position: absolute;
+  width: 100%;
   top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  text-align: center;
+  /* transform: translateX(-50%); */
   font-family: var(--ff-headings);
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-3xl);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -107,7 +108,7 @@ img {
 
 .hero .arrow {
   position: absolute;
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-3xl);
   color: white;
   top: 45vh;
   left: 50%;
@@ -122,6 +123,7 @@ img {
   justify-content: center;
 }
 .zig-zag .text-box {
+  justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
@@ -134,7 +136,7 @@ img {
 }
 
 .zig-zag h2 {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-2xl);
   font-family: var(--ff-headings);
   font-weight: 900;
   color: var(--color-text__midnight);
@@ -153,4 +155,156 @@ img {
   font-family: var(--ff-headings);
   font-weight: 700;
   text-decoration: none;
+}
+
+.zig-zag a::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1.2rem;
+  border-radius: 2.4rem;
+  margin-top: -1rem;
+}
+
+.zig-zag .text-box--yellow::after {
+  background-color: hsla(51, 100%, 49%, 0.35);
+}
+.zig-zag .text-box--pink::after {
+  background-color: hsla(7, 99%, 70%, 0.352);
+}
+
+.text-overlay-box {
+  position: relative;
+}
+
+.text-overlay-box.green-overlay {
+  color: hsl(167, 40%, 24%);
+}
+.text-overlay-box.blue-overlay {
+  color: hsl(198, 62%, 26%);
+}
+
+.text-overlay-box div {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text-overlay-box h3 {
+  font-size: var(--fs-xl);
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+}
+
+.text-overlay-box p {
+  font-size: var(--fs-lg);
+}
+.text-overlay-box.green-overlay p {
+  color: hsla(167, 40%, 24%, 0.648);
+}
+.text-overlay-box.blue-overlay p {
+  color: hsl(198, 62%, 26%);
+}
+
+/* Client Testimonials */
+
+.testimonials {
+  width: 75%;
+  margin-inline: auto;
+  padding: 12.8rem 0;
+}
+
+.testimonials h3 {
+  text-align: center;
+  margin-bottom: 9.6rem;
+  font-size: var(--fs-lg);
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--color-text__lightgray);
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.6rem;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials img {
+  width: 9.6rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+}
+
+.testimonials h4 {
+  font-size: var(--fs-lg);
+  font-family: var(--ff-headings);
+}
+
+.testimonials p {
+  font-size: var(--fs-md);
+  color: var(--color-text__base);
+  line-height: 1.7;
+}
+
+.testimonial-author p {
+  color: var(--color-text__lightgray);
+}
+
+/* Image gallery */
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Footer */
+.footer {
+  background-color: hsla(168, 75%, 70%, 0.752);
+  padding: 9.6rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.footer h3 {
+  font-size: var(--fs-2xl);
+  font-family: var(--ff-headings);
+  font-weight: 900;
+  color: hsl(168, 34%, 36%);
+  margin-bottom: 3.6rem;
+}
+
+.footer .site-links {
+  display: flex;
+  gap: 3.6rem;
+  margin-bottom: 9.6rem;
+}
+
+.footer .site-links a:link,
+.footer .site-links a:visited {
+  font-size: var(--fs-md);
+  color: hsl(168, 34%, 46%);
+  text-decoration: none;
+}
+
+.footer .site-links a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-links {
+  display: flex;
+  gap: 3.6rem;
 }
